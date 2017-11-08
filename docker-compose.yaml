@@ -2,7 +2,7 @@ version: '2.1'
 
 services:
   alpine:
-    image: jumanjiman/xrdp:alpine
+    image: a4neg/docker-xrdp:alpine
     build:
       context: alpine/
       args:
@@ -21,10 +21,10 @@ services:
 
   alpine_tag:
     extends: alpine
-    image: jumanjiman/xrdp:${ALPINE_TAG}
+    image: a4neg/docker-xrdp:${ALPINE_TAG}
 
   fedora:
-    image: jumanjiman/xrdp:fedora
+    image: a4neg/docker-xrdp:fedora
     build:
       context: fedora/
       args:
@@ -42,10 +42,10 @@ services:
 
   fedora_tag:
     extends: fedora
-    image: jumanjiman/xrdp:${FEDORA_TAG}
+    image: a4neg/docker-xrdp:${FEDORA_TAG}
 
   openscap:
-    image: jumanjiman/xrdp:openscap
+    image: a4neg/docker-xrdp:openscap
     build:
       context: fedora/openscap/
       args:
@@ -63,4 +63,4 @@ services:
 
   openscap_tag:
     extends: openscap
-    image: jumanjiman/xrdp:${OPENSCAP_TAG}
+    image: a4neg/docker-xrdp:${OPENSCAP_TAG}

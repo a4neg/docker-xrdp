@@ -17,4 +17,4 @@ LABEL \
     io.github.jumanjiman.license="GPL v3" \
     io.github.jumanjiman.docker.dockerfile="/fedora/openscap/Dockerfile" \
     io.github.jumanjiman.vcs-type="Git" \
-    io.github.jumanjiman.vcs-url="https://github.com/jumanjiman/docker-xrdp.git"
+    io.github.jumanjiman.vcs-url="https://github.com/a4neg/docker-xrdp.git"

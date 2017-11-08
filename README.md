@@ -25,33 +25,19 @@ On a Linux host with Docker:
 
     # Alpine desktop.
     # This is really meant to be a base image for others.
-    docker run -d -p 3389:3389 jumanjiman/xrdp:alpine
+    docker run -d -p 3389:3389 a4neg/docker-xrdp:alpine
 
     # Fedora desktop.
     # This is really meant to be a base image for others.
-    docker run -d -p 3389:3389 jumanjiman/xrdp
+    docker run -d -p 3389:3389 a4neg/docker-xrdp
 
     # Or desktop with SCAP workbench.
-    docker run -d -p 3389:3389 jumanjiman/xrdp:openscap
+    docker run -d -p 3389:3389 a4neg/docker-xrdp:openscap
 
 Connect to the container as user `foo` with password `bar`
 via an RDP client.
 
-On a Windows host with Docker:
-
-    # Alpine desktop.
-    # This is really meant to be a base image for others.
-    docker run -d -p 4000:3389 jumanjiman/xrdp:alpine
-
-    # Fedora desktop.
-    # This is really meant to be a base image for others.
-    docker run -d -p 4000:3389 jumanjiman/xrdp
-
-    # Or desktop with SCAP workbench.
-    docker run -d -p 4000:3389 jumanjiman/xrdp:openscap
-
-Connect to the container as user `foo` with password `bar`
-via an RDP client to localhost:4000
+Connect to the container as user `foo` with password `bar` via an RDP client to localhost:4000
 (Note that you may be able to just follow the Linux instructions, but at least some versions of Windows have Remote Assitance / Remote Desktop already listening on port 3389)
 
 
